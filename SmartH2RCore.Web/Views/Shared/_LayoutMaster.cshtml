@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Smarthr - Bootstrap Admin Template">
+    <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
+    <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+    <meta name="robots" content="noindex, nofollow">
+    <title>HRMS-@ViewBag.Title</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+
+    <!-- Lineawesome CSS -->
+    <link rel="stylesheet" href="~/css/line-awesome.min.css">
+
+    <!-- Datatable CSS -->
+    <link rel="stylesheet" href="~/css/dataTables.bootstrap4.min.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="~/css/select2.min.css">
+
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap-datetimepicker.min.css">
+
+    <!-- Tagsinput CSS -->
+    <link rel="stylesheet" href="~/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+
+    <link href="~/css/lobibox.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="~/js/html5shiv.min.js"></script>
+            <script src="~/js/respond.min.js"></script>
+        <![endif]-->
+    <style>
+        label[for="IsActive"] {
+            margin-top:2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left">
+                <a href="~/Dashboard" class="logo">
+                    <img src="~/images/logo5.png" style="max-width: 11rem; height: auto;" alt="Logo">
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="toggle_btn" href="javascript:void(0);">
+                <span class="bar-icon">
+                    <span></span>
+
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+
+            <!-- Header Title -->
+            <div class="page-title-box">
+                <h3>SDL Globe Technologie</h3>
+            </div>
+            <!-- /Header Title -->
+
+            <a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa fa-bars"></i></a>
+
+            <!-- Header Menu -->
+            <ul class="nav user-menu">
+                <!-- Nav bar start -->
+                <li class="nav-item dropdown has-arrow flag-nav ">
+                    <a href="master.html" id="menue-toggle" class="nav-link" data-toggle=""><i class="fa fa-cube" aria-hidden="true"></i><span>Modules</span> </a>
+                </li>
+                <li class="nav-item  has-arrow flag-nav ">
+                    <a  asp-action="Index" asp-controller="Dashboard" class="nav-link"><i class="fa fa-tachometer" aria-hidden="true"></i><span>Dashboard</span></a>
+                </li>
+                <!-- /Nav bar End -->
+                <!-- Flag -->
+                <li class="nav-item dropdown has-arrow flag-nav">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                        <img src="~/images/flags/us.png" alt="" height="20"> <span>English</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="javascript:void(0);" class="dropdown-item">
+                            <img src="~/images/flags/us.png" alt="" height="16"> English
+                        </a>
+                    </div>
+                </li>
+                <!-- /Flag -->
+                <!-- Notifications -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i> <span class="badge badge-pill">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span class="notification-title">Notifications</span>
+                            <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                        </div>
+                        <div class="noti-content">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+                                            <span class="avatar">
+                                                <img alt="" src="~/images/profiles/avatar-02.jpg">
+                                            </span>
+                                            <div class="media-body">
+                                                <p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+                                                <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+   
+
+                <li class="nav-item dropdown has-arrow main-drop">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <span class="user-img">
+                            <img src="~/images/profiles/avatar-21.jpg" alt="">
+                            <span class="status online"></span>
+                        </span>
+                        <span>Admin</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html">My Profile</a>
+                        <a class="dropdown-item" href="settings.html">Settings</a>
+                        <a class="dropdown-item" asp-action="LogOut" asp-controller="Account">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- /Header Menu -->
+            <!-- Mobile Menu -->
+            <div class="dropdown mobile-user-menu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" asp-action="LogOut" asp-controller="Account">Logout</a>
+                </div>
+            </div>
+            <!-- /Mobile Menu -->
+
+        </div>
+        <!-- /Header -->
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">
+                            <span>Main</span>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a asp-action="Index" asp-controller="Dashboard">Admin Dashboard</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="#"><i class="la la-building-o"></i> <span> Master</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a asp-action="Index" asp-controller="Company" class="noti-dot active">Company</a></li>
+                                <li><a asp-action="Index" asp-controller="Branch">Branches</a></li>
+                                <li><a asp-action="Index" asp-controller="AccountType">Account Type</a></li>
+                                <li><a asp-action="Index" asp-controller="DepartmentType">Department Type</a></li>
+                                <li><a asp-action="Index" asp-controller="Department">Department</a></li>
+                                <li><a asp-action="Index" asp-controller="Designation">Designation</a></li>
+                                <li><a asp-action="Index" asp-controller="EmployeeType">Employee Type</a></li>
+                                <li><a asp-action="Index" asp-controller="EmployeeSubType">Employee Sub Type</a></li>
+                                <li><a asp-action="Index" asp-controller="EmployeeStatus">Employee Status</a></li>
+                                <li><a asp-action="Index" asp-controller="Role">Role</a></li>
+                                <li><a asp-action="Index" asp-controller="Grade">Grade</a></li>
+                                <li><a asp-action="Index" asp-controller="Currency">Currency Code</a></li>
+                                <li><a asp-action="Index" asp-controller="Bank">Bank</a></li>
+                                <li><a asp-action="Index" asp-controller="Country">Country</a></li>
+                                <li><a asp-action="Index" asp-controller="State">State</a></li>
+                                <li><a asp-action="Index" asp-controller="City">City</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+        <!-- Page Wrapper -->
+        <div class="page-wrapper">
+            @RenderBody()
+            <hr />
+            <footer class="text-center">
+                <p>&copy; @DateTime.Now.Year - SmartH2R</p>
+            </footer>
+
+        </div>
+        <!-- /Page Wrapper -->
+
+    </div>
+    <!-- /Main Wrapper -->
+    <!-- jQuery -->
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="~/js/jquery.slimscroll.min.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="~/js/select2.min.js"></script>
+
+    <!-- Datetimepicker JS -->
+    <script src="~/js/moment.min.js"></script>
+    <script src="~/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Multiselect JS -->
+    <script src="~/js/multiselect.min.js"></script>
+
+    <!-- Datatable JS -->
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+
+    <!--Toaster -->
+    <script src="~/js/lobibox.js"></script>
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+    @await Html.PartialAsync("_Message")
+
+    <!-- Custom JS -->
+    <script src="~/js/app.js"></script>
+    <script src="~/js/site.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

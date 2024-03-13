@@ -1,0 +1,235 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SmartH2RCore.Web
+build_property.RootNamespace = SmartH2RCore.Web
+build_property.ProjectDir = F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/AccountType/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/AccountType/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/AttendanceDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZURhc2hib2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Bank/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1xBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Bank/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFua1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Branch/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Branch/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/City/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/City/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/CompanySettings/MasterSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVNldHRpbmdzXE1hc3RlclNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Company/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Company/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Country/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyeVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Country/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyeVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Currency/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY3lcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Currency/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY3lcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/DepartmentType/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFR5cGVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/DepartmentType/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFR5cGVcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Department/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Department/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Designation/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25cQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Designation/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaWduYXRpb25cTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/EmailSetting/EmailSetting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxTZXR0aW5nXEVtYWlsU2V0dGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/EmployeeDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/EmployeeStatus/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVTdGF0dXNcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/EmployeeStatus/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVTdGF0dXNcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/EmployeeSubType/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVTdWJUeXBlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/EmployeeSubType/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVTdWJUeXBlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/EmployeeType/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVUeXBlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/EmployeeType/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVUeXBlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Grade/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Grade/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JhZGVcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/LeaveDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/MasterDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzdGVyRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/PayrollDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5cm9sbERhc2hib2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Role/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Role/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/SettingsDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Shared/_LayoutEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Shared/_LayoutLeave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMZWF2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Shared/_LayoutMaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Shared/_LayoutPayroll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQYXlyb2xsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Shared/_LayoutSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTZXR0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Shared/_Message.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/State/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/State/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGVcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/HRMS_netcore/SmartH2R/src/SmartH2RCore.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

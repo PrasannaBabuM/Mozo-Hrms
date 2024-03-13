@@ -1,0 +1,115 @@
+﻿@model SmartH2RCore.Web.Models.CompanySettingViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutSettings.cshtml";
+    ViewData["Title"] = "Company Setting";
+}
+
+<div class="content container-fluid">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Company Settings</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary(true);
+                <div class="modal-body">
+
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Company Name<span class="text-danger"></span>*</label>
+                        <div class="col-lg-12">
+                            @Html.DropDownListFor(model => model.CompanyId, new List<SelectListItem>(), new { @class = "select companyAllDropdown" })
+                            @Html.ValidationMessageFor(model => model.CompanyId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Branch/ Work Location<span class="text-danger">*</span></label>
+                        <div class="col-lg-12">
+                            @Html.DropDownListFor(model => model.BranchId, new List<SelectListItem>(), new { @class = "select" })
+                            @Html.ValidationMessageFor(model => model.BranchId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-form-label">Masters<span class="text-danger"></span></label>
+                        <div class="col-lg-12">
+                            @Html.DropDownListFor(model => model.MasterType, Html.GetEnumSelectList<SmartH2RCore.Models.Enumes.MasterType>(), "Select Master Type", new { @class = "select" })
+                            @Html.ValidationMessageFor(model => model.MasterType, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group leave-duallist">
+                        <label id="lblMasterTableName"></label>
+                        <div class="row">
+                            <div class="col-lg-5 col-sm-5">
+                                @Html.DropDownListFor(v => v.SourceItems, new List<SelectListItem>(), new { id = "customleave_select", @class = "form-control", @size = "8", @multiple = "multiple" })
+                            </div>
+                            <div class="multiselect-controls col-lg-2 col-sm-2">
+                                <button type="button" id="customleave_select_rightAll" class="btn btn-block btn-white"><i class="fa fa-forward"></i></button>
+                                <button type="button" id="customleave_select_rightSelected" class="btn btn-block btn-white"><i class="fa fa-chevron-right"></i></button>
+                                <button type="button" id="customleave_select_leftSelected" class="btn btn-block btn-white"><i class="fa fa-chevron-left"></i></button>
+                                <button type="button" id="customleave_select_leftAll" class="btn btn-block btn-white"><i class="fa fa-backward"></i></button>
+                            </div>
+                            <div class="col-lg-5 col-sm-5">
+                                @Html.DropDownListFor(v => v.DestinationItems, new List<SelectListItem>(), new {id = "customleave_select_to", @class = "form-control", @size = "8", @multiple = "multiple" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-section ">
+                        <button type="submit" class="btn btn-primary submit-btn"><i class="fa fa-save"></i>&nbsp;Submit</button>
+                        <button type="reset" class="btn btn-primary submit-btn"><i class="fa fa-recycle"></i>&nbsp;Reset</button>
+                    </div>
+
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            $("#CompanyId").change(function () {
+                var Id = $('option:selected', this).val();
+                $.getJSON("/Branch/GetBranch", { 'companyId': Id }, function (response) {
+                    $("#BranchId").empty();
+                    $("#BranchId").append($("<option />").val(null).text("Select Branch Name"));
+                    $.each(response, function () {
+                        $("#BranchId").append($("<option />").val(this.Id).text(this.LocationName));
+                    });
+                })
+            });
+
+            $("#MasterType").change(function () {
+                var Id = $('option:selected', this).val();
+                if (Id > 0) {
+                    $("#lblMasterTableName").text($('option:selected', this).text())
+                }
+                else {
+                    $("#lblMasterTableName").text("")
+                }
+                $.getJSON("@Url.Action("GetMasterData")?masterType=" + $("#MasterType").val() + "&branchId=" + $("#BranchId").val(),
+                    function (response) {
+                        $("#customleave_select").empty();
+                        $.each(response.Source, function () {
+                            console.log(this);
+                            $("#customleave_select").append($("<option />").val(this.Value).text(this.Text));
+                        });
+
+                        $("#customleave_select_to").empty();
+                        $.each(response.Destination, function () {
+                            $("#customleave_select_to").append($("<option />").val(this.Value).text(this.Text));
+                        });
+                    }
+                )
+            });
+        });
+    </script>
+}

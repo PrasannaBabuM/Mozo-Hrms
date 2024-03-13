@@ -1,0 +1,40 @@
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.deps.json
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.dll
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.pdb
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.csprojAssemblyReference.cache
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.AssemblyInfoInputs.cache
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.AssemblyInfo.cs
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.csproj.CoreCompileInputs.cache
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.dll
+D:\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.pdb
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.deps.json
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.dll
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.pdb
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.csproj.AssemblyReference.cache
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.AssemblyInfoInputs.cache
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.AssemblyInfo.cs
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.csproj.CoreCompileInputs.cache
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.dll
+D:\BACKUPALL\SDGlobe\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.pdb
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.deps.json
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.dll
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.pdb
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.csproj.AssemblyReference.cache
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.AssemblyInfoInputs.cache
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.AssemblyInfo.cs
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.csproj.CoreCompileInputs.cache
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.dll
+F:\HRMS .netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.pdb
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.deps.json
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.dll
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\bin\Debug\netstandard2.1\SmartH2RCore.Models.pdb
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.csproj.AssemblyReference.cache
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.AssemblyInfoInputs.cache
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.AssemblyInfo.cs
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.csproj.CoreCompileInputs.cache
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.sourcelink.json
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.dll
+F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Models\obj\Debug\netstandard2.1\SmartH2RCore.Models.pdb

@@ -1,0 +1,26 @@
+﻿@if ((string)TempData["Message"] != null && (string)TempData["Message"] != "")
+{
+    if ((bool)TempData["Success"] == true)
+    {
+        <script>
+            $(function () {
+                Lobibox.notify("success", {
+                    title: 'HRMS',
+                    position: "top right",
+                    msg: "@TempData["Message"]"
+                });
+            })
+        </script>
+    }
+    if ((bool)TempData["Success"] == false)
+    {
+        <script>
+            Lobibox.notify("error", {
+                    title: 'HRMS',
+                    msg: "@TempData["Message"]",
+                    position: "top right"
+                });
+        </script>
+    }
+    TempData["Message"] = null;
+}

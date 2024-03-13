@@ -1,0 +1,405 @@
+﻿@model SmartH2RCore.Models.DTO.EmployeeDTO.JobDetailsDTO
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Employee";
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+}
+<div class="content container-fluid">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Add Employee</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="MasterDashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="JobDetailsCon">Add Employee</a></li>
+                    <li class="breadcrumb-item active">@(Model == null || Model.Id <= 0 ? "Add" : "Edit")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true);
+        <div class="row">
+             <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title mb-0">@(Model == null || Model.Id <= 0 ? "Create" : "Edit")</h4>
+@*                         <input type="hidden" value="@Model?.Country" id="cID" />
+                        <input type="hidden" value="@Model?.State" id="stateId" />
+                        <input type="hidden" value="@Model?.City" id="cityId" /> *@
+                    </div>
+                   <div class="card-body">
+                       <div class="row">
+                           <div class="col-xl-12">
+                              <div class="profile-view">
+                                   @*   <div class="profile-img-wrap">
+                                        <div class="profile-img-wrap edit-img">
+                                            <img class="inline-block" src="/images/user.jpg" alt="user">
+                                            <div class="fileupload btn">
+                                                <span class="btn-text">edit</span>
+                                                <input class="upload" type="file">
+                                            </div>
+                                        </div>
+                                    </div>  *@
+                                    <form asp-action="UploadFile" >
+                                    <div class="profile-img-wrap">
+                                        <div class="profile-img-wrap edit-img">
+                                            <img class="inline-block" id="profile-image" src="/images/user.jpg" alt="user">
+                                            <div class="fileupload btn">
+                                                <span class="btn-text">Edit</span>
+                                                <input class="upload" type="file" id="file-input" name="Photo" accept="image/*">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                  <div class="profile-basic">
+                                     <div class="row">
+                                         <div class="col-md-4">
+                                          
+                                             <div class="form-group">
+                                               <label>Company Name <span class="text-danger">*</span></label>
+                                                 <div>
+                                                        @Html.DropDownListFor(v => v.CompanyId, new List<SelectListItem>(), new { @class = "select companyAllDropdown" })                   @*  ////companyid ante company lo companyName ani ardham *@
+                                                    @Html.ValidationMessageFor(model => model.CompanyId, "", new { @class = "text-danger" })
+                                                 </div>
+                                             </div>
+
+                                              <div class="form-group ">
+                                                <label>First Name <span class="text-danger">*</span></label>
+                                                  <div>
+                                                        @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control ", autocomplete = "off" })
+                                                     @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                                                  </div>
+                                              </div>
+                                              <div class="form-group ">
+                                               <label>Suffix <span class="text-danger">*</span></label>
+                                                <div>
+                                                        @Html.TextBoxFor(model => model.Suffix, new { @class = "form-control", autocomplete = "off" })
+                                                    @Html.ValidationMessageFor(model => model.Suffix, "", new { @class = "text-danger" })
+                                                </div>
+                                              </div>
+                                              <div class="form-group ">
+                                                 <label>Gender<span class="text-danger">*</span></label>
+                                                <div>
+                                                      @Html.DropDownListFor(v => v.Employee.Gender, new List<SelectListItem>()
+                                                    {
+                                                        new SelectListItem{Text="Male",Value="Male"},
+                                                        new SelectListItem{Text="Female",Value="Female"},
+                                                        new SelectListItem{Text="Third",Value="Third"},
+
+                                                    }, new { @class = "form-control" })
+                                                      @Html.ValidationMessageFor(model => model.Employee.Gender, "", new { @class = "text-danger" })
+                                                 </div>
+                                              </div>
+                                                <div class="form-group ">
+                                                    <label>Email<span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", autocomplete = "off" })
+                                                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                         </div>
+
+                                          <div class="col-md-4">
+                                              <div class="form-group">
+                                                    <label>Work Location <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.DropDownListFor(v => v.BranchId, new List<SelectListItem>(), "", new { @class = "select branchDropdown" })                                                      @*  ////Branchid ante branch lo worklocation ani ardham *@
+                                                        @Html.ValidationMessageFor(model => model.BranchId, "", new { @class = "text-danger" })
+                                                    </div>
+                                              </div>
+                                                <div class="form-group ">
+                                                    <label>Middle Name <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.MiddelName, new { @class = "form-control", autocomplete = "off" })
+                                                        @Html.ValidationMessageFor(model => model.MiddelName, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Alias <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.Alias, new { @class = "form-control", autocomplete = "off" })
+                                                        @Html.ValidationMessageFor(model => model.Alias, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Date Of Joining <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.DateofJoining, new { @class = "form-control datetimepicker" })
+                                                        @Html.ValidationMessageFor(model => model.DateofJoining, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group ">
+                                                    <label>Password<span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.PasswordHash, new { @class = "form-control", autocomplete = "off" })
+                                                        @Html.ValidationMessageFor(model => model.PasswordHash, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+
+                                          </div>
+                                         <div class="col-md-4">
+                                                <div class="form-group ">
+                                                    <label>Salutation<span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.DropDownListFor(v => v.Salutation, new List<SelectListItem>()
+                                                    {
+                                                    new SelectListItem{Text="Mr",Value="Mr"},
+                                                    new SelectListItem{Text="Miss",Value="Miss"},
+                                                    new SelectListItem{Text="Mrs",Value="Mrs"},
+
+                                                    }, new { @class = "select" })
+                                                        @Html.ValidationMessageFor(model => model.Salutation, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Last Name <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", autocomplete = "off" })
+                                                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                @*    <div class="form-group ">
+                                                 <label> Employee Code<span class="text-danger">*</span></label>
+                                                 <div >
+                                                 @Html.DropDownListFor(v => v.Employee.Id, new List<SelectListItem>(), new { @class = "select EmployeeIdDropDown" })                                @*  ////EMployeetypeid ante Employee Typee lo Name ani ardham *@
+                                                    @* @Html.ValidationMessageFor(model => model.Employee.Id, "", new { @class = "text-danger" }) *@
+                                                    @*    </div> *@
+                                                     @*   </div>  *@
+
+                                                <div class="form-group ">
+                                                    <label>Employee Code<span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(v => v.Employee.UserCode, new { @class = "form-control", autocomplete = "off" })
+                                                        @Html.ValidationMessageFor(model => model.Employee.UserCode, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="form-group ">
+                                                    <label>Systems Payable Number <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.SystemsPayableNumber, new { @class = "form-control", autocomplete = "off" })
+                                                        @Html.ValidationMessageFor(model => model.SystemsPayableNumber, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+@* 
+                                                <div class="form-group ">
+                                                    <label>NormalizedUserName<span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.NormalizedUserName, new { @class = "form-control", autocomplete = "off" })
+                                                        @Html.ValidationMessageFor(model => model.NormalizedUserName, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div> *@
+
+                                         </div>
+                                     </div>
+                                  </div>
+                              </div>
+                           </div>
+                       </div>
+                   </div>
+
+
+                    <div class="card tab-box">
+                        <div class="row user-tabs">
+                            <div class="col-lg-12 col-md-12 col-sm-12 line-tabs">
+                                <ul class="nav nav-tabs nav-tabs-bottom">
+                                    <li class="nav-item "><a asp-action="Add" asp-controller="JobDetailsCon" data-toggle=" " class="nav-link active">Job Details</a></li>
+                                    <li class="nav-item "><a asp-action="Add" asp-controller="PersonalDetails" data-toggle=" " class="nav-link active">Personal</a></li>
+                                    <li class="nav-item "><a href="#policy" data-toggle="tab" class="nav-link  ">Policy Mapping</a></li>
+                                    <!-- <li class="nav-item"><a href="#" data-toggle="tab" class="nav-link ">Skill Set</a></li> -->
+                                    <!-- <li class="nav-item"><a href="#reportees" data-toggle="tab" class="nav-link ">Reportees</a></li> -->
+                                    <!-- <li class="nav-item"><a href="#" data-toggle="tab" class="nav-link ">Nominations</a></li> -->
+                                    <li class="nav-item "><a href="ActiveEmpBank.html" data-toggle=" " class="nav-link ">Bank & Statutory</a></li>
+                                    <li class="nav-item "><a href="#salary" data-toggle="tab" class="nav-link ">Salary</a></li>
+                                    <li class="nav-item "><a href="ActiveEmpAsset.html" data-toggle=" " class="nav-link ">Assets</a></li>
+                                    <li class="nav-item "><a href="ActiveEmpOversees.html" data-toggle=" " class="nav-link ">Overseas</a></li>
+                                    <li class="nav-item"><a href="ActiveEmpDoc.html" data-toggle="" class="nav-link ">document</a></li>
+                                    <li class="nav-item"><a href="#permission" data-toggle="tab" class="nav-link ">Permission</a></li>
+                                    <li class="nav-item"><a href="addActiveEmpHistory.html" data-toggle="" class="nav-link ">History</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content">
+                      <div class="row">
+                         <div class="col-md-6 d-flex">
+                           <div class="card profile-box flex-fill">
+                               <div class="card-body">
+                                  <h3 class="card-title"> Work Information(Primary)</h3>
+                                    <form>
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Department<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                    @Html.DropDownListFor(v => v.DepartmentId, new List<SelectListItem>(), new { @class = "select DepartmentDropDown" })                           @*  ////Departmentid ante Department lo Name ani ardham *@
+                                                    @Html.ValidationMessageFor(model => model.DepartmentId, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Designation<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                    @Html.DropDownListFor(v => v.DesignationId, new List<SelectListItem>(), new { @class = "select  DesigantionDropDown" })                            @*  ////Desgination ante desgination lo Name ani ardham *@
+                                                    @Html.ValidationMessageFor(model => model.DesignationId, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+
+
+                                            @*   <div class="form-group">
+                                        <label>Grade<span class="text-danger">*</span></label>  //// pending grade column not there in job details how to write ? doubt this column
+                                        <div>
+                                        @Html.DropDownListFor(v => v.BranchId, new List<SelectListItem>(), new { @class = "select LocationName" })
+                                        @Html.ValidationMessageFor(model => model.BranchId, "", new { @class = "text-danger" })
+                                        </div>
+                                        </div> *@
+
+
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Employee Type<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                    @Html.DropDownListFor(v => v.EmployeeTypeId, new List<SelectListItem>(), new { @class = "select EmployeeTpyeDropDown" })                                @*  ////EMployeetypeid ante Employee Typee lo Name ani ardham *@
+                                                    @Html.ValidationMessageFor(model => model.EmployeeTypeId, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            @*   <div class="form-group row">
+                                        <label class="col-lg-5 col-form-label">Employee Role<span class="text-danger">*</span></label>  staff type no id About this  requirement (Vinay)                         @*  //// RoleId ante Role lo Name ani ardham *@
+                                            @*  <div class="col-lg-7">
+                                        @Html.DropDownListFor(v => v.RoleId, new List<SelectListItem>(), new { @class = "select EmployeeRoleDropDown" })
+                                        @Html.ValidationMessageFor(model => model.RoleId, "", new { @class = "text-danger" })
+                                        </div> *@
+                                            @*   </div> *@
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Employee Status<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                    @Html.DropDownListFor(v => v.EmployeeStatusId, new List<SelectListItem>(), new { @class = "select EmployeeStatusDropDown" })                           @*  //// EmployeeStatusID ante Employee Status lo Name ani ardham *@
+                                                    @Html.ValidationMessageFor(model => model.EmployeeStatusId, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Employee Role <span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                </div>
+                                            </div>
+                                    </form>
+                               </div>
+                           </div>
+                         </div>
+
+
+                         <div class="col-md-6 d-flex">
+                            <div class="card profile-box flex-fill">
+                               <div class="card-body">
+                                   <h3 class="card-title">Work Information(Secondary)</h3>
+                                      <form>
+
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Official Mail ID<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                   @*  @Html.TextBoxFor(model => model.OfficialEmailId, new { @class = "form-control", @placeholder = "Max 50 Chars" })
+                                                    @Html.ValidationMessageFor(model => model.OfficialEmailId, "", new { @class = "text-danger" }) *@
+
+                                                    @Html.TextBoxFor(model => model.OfficialEmailId, new { @class = "form-control", @placeholder = "Max 50 Chars" })
+                                                    @Html.ValidationMessageFor(model => model.OfficialEmailId, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Official Mobile No<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+
+                                                    @Html.TextBoxFor(v => v.OfficialMobileNo, new { @class = "form-control", @placeholder = "+91 Max 10 Chars" })
+                                                    @Html.ValidationMessageFor(model => model.OfficialMobileNo, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                                                            @*   <div class="form-group">
+                                                                     <label>Official Landline No<span class="text-danger">*</span></label>
+                                                                              <div>
+                                                                           @Html.TextBoxFor(model => model.Alias, new { @class = "form-control" })
+                                                                             @Html.ValidationMessageFor(model => model.Alias, "", new { @class = "text-danger" })
+                                                                             </div>
+                                                                           </div> *@
+
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Extension Number<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                    @Html.TextBoxFor(v => v.ExtNo, new { @class = "form-control", @placeholder = "Max 5 Chars" })
+                                                    @Html.ValidationMessageFor(model => model.ExtNo, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">PAN Card Available<span class="text-danger">*</span></label>
+                                                
+                                                <div class="col-lg-7">
+                                                    @Html.TextBoxFor(v => v.PanNumber, new { @class = "form-control", @placeholder = "Max 10 Chars" })
+                                                    @Html.ValidationMessageFor(model => model.PanNumber, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Adhar Card Available<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                    @Html.TextBoxFor(v => v.UanNumber, new { @class = "form-control", @placeholder = "Max 12 Chars" })
+                                                    @Html.ValidationMessageFor(model => model.UanNumber, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                     </form>
+                                        
+                               </div>
+                            </div>
+                         </div>
+                          <div class="col-md-6 d-flex">
+                              <div class="card profile-box flex-fill">
+                                  <div class="card-body">
+                                      <h3 class="card-title">Skill Set</h3>
+                                      <form>
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Proficiency<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7" >
+                                                    @Html.DropDownListFor(v => v.Proficiency, new List<SelectListItem>()
+                                                {
+                                                new SelectListItem{Text="Select Proficiency",Value="Select proficiency"},
+                                                new SelectListItem{Text="Begineer",Value="Begineer"},
+                                                new SelectListItem{Text="Moderate",Value="Moderate"},
+                                                new SelectListItem{Text="Expert",Value="Expert"},
+
+                                                }, new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(model => model.Proficiency, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-5 col-form-label">Percentage<span class="text-danger">*</span></label>
+                                                <div class="col-lg-7">
+                                                    @Html.DropDownListFor(v => v.Percentage, new List<SelectListItem>()
+                                                {
+                                                new SelectListItem{Text="0%-50%",Value="0%-50%"},
+                                                new SelectListItem{Text="50%-80%",Value="50%-80%"},
+                                                new SelectListItem{Text="80%-100%",Value="80%-100%"},
+
+                                                }, new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(model => model.Percentage, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                          
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+             </div>
+             
+                <div class="col-md-12">
+                    <div class="submit-section">
+                        <button type="submit" class="btn btn-primary submit-btn"><i class="fa fa-save"></i>&nbsp;@(Model == null || Model.Id <= 0 ? "Save" : "Update")</button>
+                    </div>
+                </div>
+        </div>
+
+    }
+</div>

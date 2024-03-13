@@ -1,0 +1,221 @@
+﻿@model SmartH2RCore.Models.DTO.Master.BranchDTO
+@{
+    ViewData["Title"] = "Add Branch";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+}
+
+<div class="content container-fluid">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Branch</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="MasterDashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Branch">Branch</a></li>
+                    <li class="breadcrumb-item active">@(Model==null || Model.Id<=0? "Add":"Edit")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true);
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title mb-0">@(Model==null || Model.Id<=0? "Create":"Edit")</h4>
+                        <input type="hidden" value="@Model?.Country" id="cID" />
+                        <input type="hidden" value="@Model?.State" id="stateId" />
+                        <input type="hidden" value="@Model?.City" id="cityId" />
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">Company Name</label>
+                                    <div class="col-lg-8">
+                                        @Html.DropDownListFor(v => v.CompanyId, new List<SelectListItem>(), "", new { @class = "select companyDropdown" })
+                                        @Html.ValidationMessageFor(model => model.CompanyId, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">Region Name<span class="text-danger">*</span></label>
+                                    <div class="col-lg-8">
+                                        @Html.DropDownListFor(v => v.RegionName, new List<SelectListItem>()
+                                        {
+                                            new SelectListItem{Text="North",Value="North"},
+                                            new SelectListItem{Text="South",Value="South"},
+                                            new SelectListItem{Text="East",Value="East"},
+                                            new SelectListItem{Text="West",Value="West"}
+                                        }, new { @class = "select" })
+                                        @Html.ValidationMessageFor(model => model.RegionName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">WL Name<span class="text-danger">*</span></label>
+                                    <div class="col-lg-8">
+                                        @Html.TextBoxFor(v => v.LocationName, new { @class = "form-control", @placeholder = "Work Location Name" })
+                                        @Html.ValidationMessageFor(model => model.LocationName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">WL Code</label>
+                                    <div class="col-lg-8">
+                                        @Html.TextBoxFor(v => v.LocationCode, new { @class = "form-control", @placeholder = "Work Location Code" })
+                                        @Html.ValidationMessageFor(model => model.LocationCode, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">Establishment Date</label>
+                                    <div class="col-lg-8">
+                                        @Html.TextBoxFor(v => v.EstablishmentDate, new { @class = "form-control datetimepicker", @placeholder = "Estimated Date" })
+                                        @Html.ValidationMessageFor(model => model.EstablishmentDate, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">ESI Code No</label>
+                                    <div class="col-lg-8">
+                                        @Html.TextBoxFor(v => v.ESICodeNo, new { @class = "form-control", @placeholder = "ESI Code No" })
+                                        @Html.ValidationMessageFor(model => model.ESICodeNo, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">ESI WL Office</label>
+                                    <div class="col-lg-8">
+                                        @Html.TextBoxFor(v => v.ESIWorkLocationOffice, new { @class = "form-control", @placeholder = "ESI WL Office" })
+                                        @Html.ValidationMessageFor(model => model.ESIWorkLocationOffice, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">ESI Contact No</label>
+                                    <div class="col-lg-8">
+                                        @Html.TextBoxFor(v => v.ESIContactNo, new { @class = "form-control", @placeholder = "ESI Contact No" })
+                                        @Html.ValidationMessageFor(model => model.ESIContactNo, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label">PT Circle</label>
+                                    <div class="col-lg-8">
+                                        @Html.TextBoxFor(v => v.PTCircle, new { @class = "form-control", @placeholder = "PT Circle" })
+                                        @Html.ValidationMessageFor(model => model.PTCircle, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Address</label>
+                                    <div class="col-lg-9">
+                                        @Html.TextBoxFor(v => v.Address, new { @class = "form-control", @placeholder = "Address" })
+                                        @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Country<span class="text-danger"></span></label>
+                                    <div class="col-lg-9">
+                                        <select class="select countryDropdown" asp-for="Country">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">State<span class="text-danger"></span></label>
+                                    <div class="col-lg-9">
+                                        <select class="select" asp-for="State">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">City<span class="text-danger"></span></label>
+                                    <div class="col-lg-9">
+                                        <select class="select" asp-for="City">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">Zip Code</label>
+                                    <div class="col-lg-9">
+                                        @Html.TextBoxFor(v => v.ZipCode, new { @class = "form-control", @placeholder = "Zip Code" })
+                                        @Html.ValidationMessageFor(model => model.ZipCode, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">EPF Code No</label>
+                                    <div class="col-lg-9">
+                                        @Html.TextBoxFor(v => v.EPFCodeNo, new { @class = "form-control", @placeholder = "EPF Code No" })
+                                        @Html.ValidationMessageFor(model => model.EPFCodeNo, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">EPF WL Office</label>
+                                    <div class="col-lg-9">
+                                        @Html.TextBoxFor(v => v.EPFWorkLocationOffice, new { @class = "form-control", @placeholder = "EPF WL Office" })
+                                        @Html.ValidationMessageFor(model => model.EPFWorkLocationOffice, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">EPF Contact</label>
+                                    <div class="col-lg-9">
+                                        @Html.TextBoxFor(v => v.EPFContactNo, new { @class = "form-control", @placeholder = "EPF Contact Number" })
+                                        @Html.ValidationMessageFor(model => model.EPFContactNo, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label">TDS Circle</label>
+                                    <div class="col-lg-9">
+                                        @Html.TextBoxFor(v => v.TDSCircle, new { @class = "form-control", @placeholder = "TDS Circle" })
+                                        @Html.ValidationMessageFor(model => model.TDSCircle, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="submit-section ">
+                    <button type="submit" class="btn btn-primary submit-btn"><i class="fa fa-save"></i>&nbsp;@(Model==null || Model.Id<=0? "Add":"Update")</button>
+                    <button type="reset" class="btn btn-primary submit-btn"><i class="fa fa-recycle"></i>&nbsp;Reset</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $("#Country").change(function () {
+                var Id = $('option:selected', this).val();
+                $.getJSON("/State/GetSateList", { 'countryId': Id }, function (response) {
+                    $("#State").empty();
+                    $("#State").append($("<option />").val(null).text("Select State"));
+                    $.each(response, function () {
+                        $("#State").append($("<option />").val(this.Id).text(this.Name));
+                    });
+                    $("#State").val($('#stateId').val())
+                    $("#State").trigger('change');
+                })
+            });
+
+            $("#State").change(function () {
+                var Id = $('option:selected', this).val();
+                $.getJSON("/City/GetCityList", { 'stateid': Id }, function (response) {
+                    $("#City").empty();
+                    $("#City").append($("<option />").val(null).text("Select City"));
+                    $.each(response, function () {
+                        $("#City").append($("<option />").val(this.Id).text(this.Name));
+                        
+                    });
+                    $("#City").val($('#cityId').val())
+                })
+            });
+        });
+    </script>
+}

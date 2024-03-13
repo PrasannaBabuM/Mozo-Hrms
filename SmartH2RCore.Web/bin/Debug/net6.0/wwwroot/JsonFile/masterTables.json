@@ -1,0 +1,22 @@
+﻿[
+  {
+    "code": "1",
+    "tablename": "Currency"
+  },
+  {
+    "code": "2",
+    "tablename": "Country"
+  },
+  {
+    "code": "3",
+    "tablename": "State"
+  },
+  {
+    "code": "4",
+    "tablename": "City"
+  },
+  {
+    "code": "5",
+    "tablename": "C"
+  }
+]

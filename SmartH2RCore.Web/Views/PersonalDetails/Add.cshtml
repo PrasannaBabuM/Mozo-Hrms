@@ -1,0 +1,205 @@
+﻿@model SmartH2RCore.Models.DTO.Employee.PersonalDetailsDTO
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+    ViewData["Title"] = "Add Employee";
+}
+<div class="content container-fluid">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Personal Details</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="MasterDashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="PersonalDetails">Add Active</a></li>
+                    <li class="breadcrumb-item active">@(Model == null || Model.EmployeeId <= 0 ? "Add" : "Edit")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true);
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title mb-0">@(Model == null || Model.Id <= 0 ? "Create" : "Edit")</h4>
+                        @*                         <input type="hidden" value="@Model?.Country" id="cID" />
+                       <input type="hidden" value="@Model?.State" id="stateId" />
+                       <input type="hidden" value="@Model?.City" id="cityId" /> *@
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="profile-view">
+                                   @*  <div class="profile-img-wrap">
+                                        <div class="profile-img-wrap edit-img">
+                                            <img class="inline-block" src="assets/img/user.jpg" alt="user">
+                                            <div class="fileupload btn">
+                                                <span class="btn-text">edit</span>
+                                                <input class="upload" type="file">
+                                            </div>
+                                        </div>
+                                    </div> *@
+
+                                    <div class="profile-basic">
+                                        <div class="row">
+                                            <div class="col-md-4">
+
+                                                <div class="form-group">
+                                                    <label>Company Name <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.DropDownListFor(v => v.CompanyId, new List<SelectListItem>(), new { @class = "select companyDropdown" })                   @*  ////companyid ante company lo companyName ani ardham *@
+                                                        @Html.ValidationMessageFor(model => model.CompanyId, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group ">
+                                                    <label>First Name <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Suffix <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.Suffix, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(model => model.Suffix, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Gender<span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.DropDownListFor(v => v.Employee.Gender, new List<SelectListItem>()
+                                                    {
+                                                    new SelectListItem{Text="Male",Value="Male"},
+                                                    new SelectListItem{Text="Female",Value="Female"},
+                                                    new SelectListItem{Text="Third",Value="Third"},
+
+                                                    }, new { @class = "select" })
+                                                        @Html.ValidationMessageFor(model => model.Employee.Gender, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Work Location <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.DropDownListFor(v => v.BranchId, new List<SelectListItem>(), "", new { @class = "select branchDropdown" })                                                      @*  ////Branchid ante branch lo worklocation ani ardham *@
+                                                        @Html.ValidationMessageFor(model => model.BranchId, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Middle Name <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.MiddelName, new { @class = "form-control", })
+                                                        @Html.ValidationMessageFor(model => model.MiddelName, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Alias <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.Alias, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(model => model.Alias, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Date Of Joining <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.DateofJoining, new { @class = "form-control datetimepicker" })
+                                                        @Html.ValidationMessageFor(model => model.DateofJoining, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="form-group ">
+                                                    <label>Salutation<span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.DropDownListFor(v => v.Salutation, new List<SelectListItem>()
+                                                    {
+                                                    new SelectListItem{Text="Mrs",Value="Mrs"},
+                                                    new SelectListItem{Text="Miss",Value="Miss"},
+                                                    new SelectListItem{Text="Mr",Value="Mr"},
+
+                                                    }, new { @class = "select" })
+                                                        @Html.ValidationMessageFor(model => model.Salutation, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="form-group ">
+                                                    <label>Last Name <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                    @*    <div class="form-group ">
+                                                      <label> Employee Code<span class="text-danger">*</span></label>
+                                                      <div >
+                                                       @Html.DropDownListFor(v => v.Employee.Id, new List<SelectListItem>(), new { @class = "select EmployeeIdDropDown" })                                @*  ////EMployeetypeid ante Employee Typee lo Name ani ardham *@
+                                                      @* @Html.ValidationMessageFor(model => model.Employee.Id, "", new { @class = "text-danger" }) *@
+                                                      @*    </div> *@
+                                                      @*   </div>  *@
+
+                                                <div class="form-group ">
+                                                    <label>Employee Code<span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(v => v.Employee.UserCode, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(model => model.Employee.UserCode, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="form-group ">
+                                                    <label>Systems Payable Number <span class="text-danger">*</span></label>
+                                                    <div>
+                                                        @Html.TextBoxFor(model => model.SystemsPayableNumber, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(model => model.SystemsPayableNumber, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tab-box">
+                        <div class="row user-tabs">
+                            <div class="col-lg-12 col-md-12 col-sm-12 line-tabs">
+                                <ul class="nav nav-tabs nav-tabs-bottom">
+                                    <li class="nav-item "><a asp-action="Add" asp-controller="JobDetailsCon" data-toggle=" " class="nav-link active">Job Details</a></li>
+                                    <li class="nav-item "><a asp-action="Add" asp-controller="PersonalDetails" data-toggle=" " class="nav-link active">Personal</a></li>
+                                    <li class="nav-item "><a href="#policy" data-toggle="tab" class="nav-link  ">Policy Mapping</a></li>
+                                    <!-- <li class="nav-item"><a href="#" data-toggle="tab" class="nav-link ">Skill Set</a></li> -->
+                                    <!-- <li class="nav-item"><a href="#reportees" data-toggle="tab" class="nav-link ">Reportees</a></li> -->
+                                    <!-- <li class="nav-item"><a href="#" data-toggle="tab" class="nav-link ">Nominations</a></li> -->
+                                    <li class="nav-item "><a href="ActiveEmpBank.html" data-toggle=" " class="nav-link ">Bank & Statutory</a></li>
+                                    <li class="nav-item "><a href="#salary" data-toggle="tab" class="nav-link ">Salary</a></li>
+                                    <li class="nav-item "><a href="ActiveEmpAsset.html" data-toggle=" " class="nav-link ">Assets</a></li>
+                                    <li class="nav-item "><a href="ActiveEmpOversees.html" data-toggle=" " class="nav-link ">Overseas</a></li>
+                                    <li class="nav-item"><a href="ActiveEmpDoc.html" data-toggle="" class="nav-link ">document</a></li>
+                                    <li class="nav-item"><a href="#permission" data-toggle="tab" class="nav-link ">Permission</a></li>
+                                    <li class="nav-item"><a href="addActiveEmpHistory.html" data-toggle="" class="nav-link ">History</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

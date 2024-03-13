@@ -1,0 +1,103 @@
+﻿@model SmartH2RCore.Models.DTO.Master.CountryDTO;
+@{
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+    ViewData["Title"] = "Country Master";
+}
+
+<div class="content container-fluid">
+
+
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Country</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="MasterDashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Country">Country</a></li>
+                    <li class="breadcrumb-item active">@(Model==null || Model.Id<=0? "Add":"Edit")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true);
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Department -->
+                <div class="card leave-box" id="leave_annual">
+                    <div class="card-body">
+                        <div class="h3 card-title with-switch">
+                            @(Model==null || Model.Id<=0? "Create":"Edit")
+                        </div>
+                        <div class="leave-item">
+                            <form method="post">
+                                @Html.HiddenFor(v => v.Id)
+                                <div class="form-group">
+                                    <label for="Name">Name<span class="text-danger">*</span></label>
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                                </div><br>
+                                <div class="form-group">
+                                    <label for="Capital">Capital<span class="text-danger">*</span></label>
+                                    @Html.TextBoxFor(model => model.Capital, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Capital, "", new { @class = "text-danger" })
+                                </div><br>
+
+                                <div class="form-group">
+                                    <label for="CurrencyId">Currency Code<span class="text-danger">*</span></label>
+                                    @Html.DropDownListFor(model => model.CurrencyId, new List<SelectListItem>(), new { @class = "select currencyDropdown" })
+                                    <input type="hidden" id="cuID" value="@Model.CurrencyId" />
+                                </div><br>
+                                <div class="form-group">
+                                    <label for="ISO31663CCodes">ISO31663C Codes<span class="text-danger">*</span></label>
+                                    @Html.TextBoxFor(model => model.ISO31663CCodes, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.ISO31663CCodes, "", new { @class = "text-danger" })
+                                </div><br>
+                                <div class="form-group">
+                                    <label for="Description">Description<span class="text-danger"></span></label>
+                                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+                                </div><br>
+                                <div class="form-check">
+                                    @Html.CheckBoxFor(model => model.IsActive, new { @class = "form-check-input" })
+                                    <label for="IsActive">Is Active<span class="text-danger"></span></label>
+                                    @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })
+                                </div><br>
+                            </form>
+                            <!-- /Add Department -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="submit-section ">
+                    <button type="submit" class="btn btn-primary submit-btn"><i class="fa fa-save"></i>&nbsp;@(Model==null || Model.Id<=0? "Add":"Update")</button>
+                    <button type="reset" class="btn btn-primary submit-btn"><i class="fa fa-recycle"></i>&nbsp;Reset</button>
+                </div>
+            </div>
+            <!-- /Annual Leave -->
+        </div>
+    }
+</div>
+
+@*@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            $.getJSON("/Currency/GetCurrency", function (response) {
+                $("#CurrencyId").empty();
+                $.each(response, function () {
+                    $("#CurrencyId").append($("<option />").val(this.Id).text(this.Name));
+                });
+            })
+
+            setTimeout(function () { $("#CurrencyId").val($("#cid").val()); alert($("#cid").val()); }, 3000);
+        });
+            //function myFunction() {
+            //    setTimeout(function () { $("#CurrencyId").val(5); alert("updated"); }, 3000);
+            //}
+    </script>
+}*@

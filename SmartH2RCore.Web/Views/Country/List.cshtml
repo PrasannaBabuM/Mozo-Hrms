@@ -1,0 +1,125 @@
+﻿@model SmartH2RCore.Models.DTO.Master.CountryDTO;
+@{
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+    ViewData["Title"] = "Country Master";
+}
+
+<div class="content container-fluid">
+
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Country</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="MasterDashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Country</li>
+                </ul>
+            </div>
+            <div class="col-auto float-right ml-auto">
+                <a asp-action="Add" asp-controller="Country" class="btn add-btn"><i class="fa fa-plus"></i>Add</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <jquery-datatables id="datatable"
+                               class="table table-striped custom-table mb-0 datatable"
+                               model="@Model"
+                               thead-class="text-center"
+                               enable-searching="true"
+                               search-row-th-class="p-0"
+                               search-input-class="form-control"
+                               search-input-style="form-control"
+                               search-input-placeholder-prefix="Search"
+                               use-property-type-as-input-type="false">
+            </jquery-datatables>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+     $(document).ready(function () {
+         var table = $('#datatable').DataTable({
+            language: {
+                processing: "Loading Data...",
+                zeroRecords: "No matching records found"
+            },
+            processing: true,
+            serverSide: true,
+            orderCellsTop: true,
+            search: false,
+            autoWidth: true,
+            deferRender: true,
+            lengthMenu: [[5, 10, 15, 20, -1], [5, 10, 15, 20, "All"]],
+            dom: '<"row"<"col-sm-12 col-md-6"B><"col-sm-12 col-md-6 text-right"l>><"row"<"col-sm-12"tr>><"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
+             buttons: [
+                 {
+                     text: "Excel",
+                     className: 'btn btn-sm btn add-btn float-left',
+                     action: function (e, dt, node, config) {
+                         window.location.href = "@Url.Action("GetExcel")";
+                     },
+                     init: function (api, node, config) {
+                         $(node).removeClass('dt-button');
+                     }
+                 }
+             ],
+            ajax: {
+                type: "POST",
+                url: '@Url.Action("GetCountry")',
+                contentType: "application/json; charset=utf-8",
+                async: true,
+                data: function (data) {
+                    return JSON.stringify(data);
+                }
+            },
+             columns: [
+                {
+                    data: "Name",
+                    name: "co"
+                },
+                {
+                    data: "Capital",
+                    name: "co"
+                },
+                {
+                    data: "ISO31663CCodes",
+                    name: "co"
+                },
+                {
+                    data: "CurrencyCode",
+                    title: "Currency Code",
+                    name: "co"
+                },
+                {
+                    title: "Action",
+                    data: 'Id',
+                    searchable: false,
+                    orderable: false,
+                    render: function (data, type, full, meta) {
+                        data = '<div class="dropdown dropdown-action">'
+                                + '<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>'
+                                + '<div class="dropdown-menu dropdown-menu-right">'
+                                + '<a class="dropdown-item" href="@Url.Action("Edit")/' + data + '"><i class="fa fa-pencil m-r-5"></i> Edit</a>'
+                                + '<a class="dropdown-item deleteRecord" href="@Url.Action("Delete")/' + data + '"><i class="fa fa-trash-o m-r-5"></i> Delete</a>'
+                                + '</div> </div>'
+                            return data;
+                    }
+                }
+            ]
+         })
+         table.columns().every(function (index) {
+             $('#datatable thead tr:last th:eq(' + index + ') input')
+                 .on('keyup',
+                     function (e) {
+                         if (e.keyCode === 13) {
+                             table.column($(this).parent().index() + ':visible').search(this.value).draw();
+                         }
+                     });
+         });
+    });
+    </script>
+}

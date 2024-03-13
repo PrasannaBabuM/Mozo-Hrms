@@ -1,0 +1,32 @@
+﻿@model SmartH2RCore.Models.DTO.Employee.RegistorDTO
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "_Layout";
+}
+
+<h2>Sign Up</h2>
+
+<p>@Html.ValidationSummary()</p>
+
+<form action="@Url.Action("Register")" method="POST">
+@*     <div class="form-group">
+
+        <input type="text" class="form-control" id="Email" name="Email" placeholder="Mail">
+
+        <div>
+            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <input type="password" class="form-control" id="Password" name="Password" placeholder="Password">
+        <div>
+            @Html.TextBoxFor(model => model.PasswordHash, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PasswordHash, "", new { @class = "text-danger" })
+        </div>
+    </div> *@
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

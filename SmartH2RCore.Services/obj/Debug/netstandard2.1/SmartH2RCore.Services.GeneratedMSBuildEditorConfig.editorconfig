@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = SmartH2RCore.Services
+build_property.ProjectDir = F:\HRMS_netcore\SmartH2R\src\SmartH2RCore.Services\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

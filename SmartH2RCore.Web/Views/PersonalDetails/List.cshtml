@@ -1,0 +1,26 @@
+﻿@model SmartH2RCore.Models.DTO.Employee.PersonalDetailsDTO
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_LayoutEmployee.cshtml";
+    ViewData["Title"] = " List Employee";
+}
+<div class="content container-fluid">
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Personal details</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="MasterDashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Add Employee</li>
+                </ul>
+            </div>
+            <div class="col-auto float-right ml-auto">
+                <a asp-action="Add" asp-controller="PersonalDetails" class="btn add-btn"><i class="fa fa-plus"></i>Add </a>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,60 @@
+﻿@model SmartH2RCore.Models.DTO.Master.DesignationDTO
+@{
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+    ViewData["Title"] = "Designation Master";
+}
+
+<div class="content container-fluid">
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">Designation</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="MasterDashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Designation">Designation</a></li>
+                    <li class="breadcrumb-item active">@(Model==null || Model.Id<=0? "Add":"Edit")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true);
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card leave-box" id="leave_annual">
+                    <div class="card-body">
+                        <div class="h3 card-title with-switch">
+                            @(Model==null || Model.Id<=0? "Create":"Edit")
+                        </div>
+                        <div class="leave-item">
+
+                            <div class="form-group">
+                                <label for="Name">Name<span class="text-danger">*</span></label>
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                            </div><br>
+                            <div class="form-group">
+                                <label for="Code">Description<span class="text-danger">*</span></label>
+                                @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                            </div><br>
+                            <div class="form-check">
+                                @Html.CheckBoxFor(model => model.IsActive, new { @class = "form-check-input" })
+                                <label for="IsActive">Is Active<span class="text-danger"></span></label>
+                                @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })
+                            </div><br>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="submit-section ">
+                    <button type="submit" class="btn btn-primary submit-btn"><i class="fa fa-save"></i>&nbsp;@(Model==null || Model.Id<=0? "Add":"Update")</button>
+                    <button type="reset" class="btn btn-primary submit-btn"><i class="fa fa-recycle"></i>&nbsp;Reset</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,96 @@
+﻿@model SmartH2RCore.Models.DTO.Master.CityDTO;
+@{
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+    ViewData["Title"] = "City Master";
+}
+
+<div class="content container-fluid">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title">City</h3>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="MasterDashboard">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="City">City</a></li>
+                    <li class="breadcrumb-item active">@(Model==null || Model.Id<=0? "Add":"Edit")</li>
+                </ul>h
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true);
+
+        if (Model != null && Model.Id > 0)
+        {
+            <input type="hidden" id="stID" value="@Model.StateId" />
+            <input type="hidden" id="cID" value="@Model.State.CountryId" />
+        }
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Department -->
+                <div class="card leave-box" id="leave_annual">
+                    <div class="card-body">
+                        <div class="h3 card-title with-switch">
+                            @(Model==null || Model.Id<=0? "Create":"Edit")
+                        </div>
+                        <div class="leave-item">
+                            <form method="post">
+
+                                <div class="form-group">
+                                    <label for="Country">Country<span class="text-danger">*</span></label>
+                                    <select id="Country" class="select countryDropdown"> </select>
+                                </div><br>
+
+                                <div class="form-group">
+                                    <label for="StateId">State<span class="text-danger">*</span></label>
+                                    @Html.DropDownListFor(model => model.StateId, new List<SelectListItem>(), new { @class = "select stateDropdown" })
+                                </div><br>
+
+                                <div class="form-group">
+                                    <label for="Name">Name<span class="text-danger">*</span></label>
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                </div><br>
+                                <div class="form-group">
+                                    <label for="Description">Description<span class="text-danger"></span></label>
+                                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+                                </div><br>
+                                <div class="form-check">
+                                    @Html.CheckBoxFor(model => model.IsActive, new { @class = "form-check-input" })
+                                    <label for="IsActive">Is Active<span class="text-danger"></span></label>
+                                    @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })
+                                </div><br>
+                            </form>
+                            <!-- /Add Department -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="submit-section ">
+                    <button type="submit" class="btn btn-primary submit-btn"><i class="fa fa-save"></i>&nbsp;@(Model==null || Model.Id<=0? "Add":"Update")</button>
+                    <button type="reset" class="btn btn-primary submit-btn"><i class="fa fa-recycle"></i>&nbsp;Reset</button>
+                </div>
+            </div>
+            <!-- /Annual Leave -->
+        </div>
+    }
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $("#Country").change(function () {
+                var Id = $('option:selected', this).val();
+                $.getJSON("/State/GetSateList", { 'countryId': Id }, function (response) {
+                    $("#StateId").empty();
+                    $("#StateId").append($("<option />").val(null).text("Select State"));
+                    $.each(response, function () {
+                        $("#StateId").append($("<option />").val(this.Id).text(this.Name));
+                    });
+                    $('#StateId').val($('#stID').val());
+                })
+            });
+        });
+    </script>
+}

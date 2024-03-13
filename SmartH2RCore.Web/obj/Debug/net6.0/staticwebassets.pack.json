@@ -1,0 +1,553 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\JsonFile\\countries_states_cities.json",
+      "PackagePath": "staticwebassets\\JsonFile\\countries_states_cities.json"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\JsonFile\\currency.json",
+      "PackagePath": "staticwebassets\\JsonFile\\currency.json"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\JsonFile\\masterTables.json",
+      "PackagePath": "staticwebassets\\JsonFile\\masterTables.json"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\bootstrap-datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datetimepicker.min.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar.min.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\line-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\line-awesome.min.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\lobibox.css",
+      "PackagePath": "staticwebassets\\css\\lobibox.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\css\\select2.min.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\CircularStd-Black.woff",
+      "PackagePath": "staticwebassets\\fonts\\CircularStd-Black.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\CircularStd-BlackItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\CircularStd-BlackItalic.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\CircularStd-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\CircularStd-Bold.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\CircularStd-BoldItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\CircularStd-BoldItalic.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\CircularStd-Book.woff",
+      "PackagePath": "staticwebassets\\fonts\\CircularStd-Book.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\CircularStd-BookItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\CircularStd-BookItalic.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\CircularStd-Medium.woff",
+      "PackagePath": "staticwebassets\\fonts\\CircularStd-Medium.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\CircularStd-MediumItalic.woff",
+      "PackagePath": "staticwebassets\\fonts\\CircularStd-MediumItalic.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\MaterialIcons-Regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\MaterialIcons-Regular.eot"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\MaterialIcons-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\MaterialIcons-Regular.ttf"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\MaterialIcons-Regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\MaterialIcons-Regular.woff2"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\fontawesome-webfont-1.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont-1.eot"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\line-awesome-1.eot",
+      "PackagePath": "staticwebassets\\fonts\\line-awesome-1.eot"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\line-awesome.eot",
+      "PackagePath": "staticwebassets\\fonts\\line-awesome.eot"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\line-awesome.svg",
+      "PackagePath": "staticwebassets\\fonts\\line-awesome.svg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\line-awesome.ttf",
+      "PackagePath": "staticwebassets\\fonts\\line-awesome.ttf"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\line-awesome.woff",
+      "PackagePath": "staticwebassets\\fonts\\line-awesome.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\fonts\\line-awesome.woff2",
+      "PackagePath": "staticwebassets\\fonts\\line-awesome.woff2"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\attachment.png",
+      "PackagePath": "staticwebassets\\images\\attachment.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\banner1.svg",
+      "PackagePath": "staticwebassets\\images\\banner1.svg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\banner2.svg",
+      "PackagePath": "staticwebassets\\images\\banner2.svg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\banner3.svg",
+      "PackagePath": "staticwebassets\\images\\banner3.svg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\banner4.svg",
+      "PackagePath": "staticwebassets\\images\\banner4.svg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\flags\\de.png",
+      "PackagePath": "staticwebassets\\images\\flags\\de.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\flags\\es.png",
+      "PackagePath": "staticwebassets\\images\\flags\\es.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\flags\\fr.png",
+      "PackagePath": "staticwebassets\\images\\flags\\fr.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\flags\\us.png",
+      "PackagePath": "staticwebassets\\images\\flags\\us.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\img-01.jpg",
+      "PackagePath": "staticwebassets\\images\\img-01.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\logo2.png",
+      "PackagePath": "staticwebassets\\images\\logo2.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\logo3.png",
+      "PackagePath": "staticwebassets\\images\\logo3.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\logo4.png",
+      "PackagePath": "staticwebassets\\images\\logo4.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\logo5.png",
+      "PackagePath": "staticwebassets\\images\\logo5.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\placeholder.jpg",
+      "PackagePath": "staticwebassets\\images\\placeholder.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-01.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-01.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-02.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-02.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-03.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-03.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-04.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-04.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-05.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-05.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-06.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-06.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-07.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-07.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-08.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-08.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-09.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-09.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-10.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-10.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-11.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-11.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-12.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-12.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-13.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-13.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-14.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-14.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-15.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-15.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-16.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-16.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-17.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-17.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-18.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-18.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-19.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-19.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-20.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-20.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-21.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-21.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-22.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-22.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-24.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-24.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-25.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-25.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-26.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-26.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-28.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-28.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\profiles\\avatar-29.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\avatar-29.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\sdl_logo_white1.png",
+      "PackagePath": "staticwebassets\\images\\sdl_logo_white1.png"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\user.jpg",
+      "PackagePath": "staticwebassets\\images\\user.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\images\\video-call.jpg",
+      "PackagePath": "staticwebassets\\images\\video-call.jpg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\bootstrap-datetimepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-datetimepicker.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\chart.js",
+      "PackagePath": "staticwebassets\\js\\chart.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\dropfiles.js",
+      "PackagePath": "staticwebassets\\js\\dropfiles.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\jquery.fullcalendar.js",
+      "PackagePath": "staticwebassets\\js\\jquery.fullcalendar.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\jquery.maskedinput.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.maskedinput.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\jquery.slimscroll.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slimscroll.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\jquery.ui.touch-punch.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.ui.touch-punch.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\lobibox.js",
+      "PackagePath": "staticwebassets\\js\\lobibox.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\mask.js",
+      "PackagePath": "staticwebassets\\js\\mask.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\js\\moment.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\multiselect.min.js",
+      "PackagePath": "staticwebassets\\js\\multiselect.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\notifications.js",
+      "PackagePath": "staticwebassets\\js\\notifications.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\js\\select2.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\site.min.js",
+      "PackagePath": "staticwebassets\\js\\site.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\js\\task.js",
+      "PackagePath": "staticwebassets\\js\\task.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\.bower.json",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\.bower.json"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation\\.bower.json",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\.bower.json"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\bootstrap-tagsinput\\bootstrap-tagsinput.css",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap-tagsinput\\bootstrap-tagsinput.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\bootstrap-tagsinput\\bootstrap-tagsinput.min.js",
+      "PackagePath": "staticwebassets\\plugins\\bootstrap-tagsinput\\bootstrap-tagsinput.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\morris\\morris.css",
+      "PackagePath": "staticwebassets\\plugins\\morris\\morris.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\morris\\morris.min.js",
+      "PackagePath": "staticwebassets\\plugins\\morris\\morris.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\raphael\\raphael.min.js",
+      "PackagePath": "staticwebassets\\plugins\\raphael\\raphael.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\sticky-kit-master\\dist\\sticky-kit.min.js",
+      "PackagePath": "staticwebassets\\plugins\\sticky-kit-master\\dist\\sticky-kit.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\summernote\\dist\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\font\\summernote.eot"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\summernote\\dist\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\font\\summernote.ttf"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\summernote\\dist\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\font\\summernote.woff"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\summernote\\dist\\summernote-bs4.css",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\summernote-bs4.css"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\plugins\\summernote\\dist\\summernote-bs4.min.js",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\summernote-bs4.min.js"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\sounds\\SOUND5.ogg",
+      "PackagePath": "staticwebassets\\sounds\\SOUND5.ogg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\sounds\\sound2.ogg",
+      "PackagePath": "staticwebassets\\sounds\\sound2.ogg"
+    },
+    {
+      "Id": "D:\\SmartH2R\\HRMS_netcore\\SmartH2R\\src\\SmartH2RCore.Web\\wwwroot\\sounds\\sound4.ogg",
+      "PackagePath": "staticwebassets\\sounds\\sound4.ogg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SmartH2RCore.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SmartH2RCore.Web.props",
+      "PackagePath": "build\\SmartH2RCore.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SmartH2RCore.Web.props",
+      "PackagePath": "buildMultiTargeting\\SmartH2RCore.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SmartH2RCore.Web.props",
+      "PackagePath": "buildTransitive\\SmartH2RCore.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

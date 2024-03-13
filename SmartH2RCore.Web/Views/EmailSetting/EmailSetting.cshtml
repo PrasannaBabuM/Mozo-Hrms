@@ -1,0 +1,66 @@
+﻿@model SmartH2RCore.Models.DTO.Settings.EmailSettingDTO
+@{
+    ViewData["Title"] = "Email Setting";
+    Layout = "~/Views/Shared/_LayoutSettings.cshtml";
+}
+<div class="content container-fluid" data-select2-id="8">
+    <div class="row" data-select2-id="7">
+        <div class="col-md-8 offset-md-2" data-select2-id="6">
+            <form data-select2-id="5" method="post">
+                @Html.HiddenFor(v=>v.Id)
+                <h4 class="page-title m-t-30">SMTP Email Settings</h4>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>SMTP HOST</label>
+                            @Html.TextBoxFor(model => model.SmtpHost, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SmtpHost, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>SMTP USER</label>
+                            @Html.TextBoxFor(model => model.SmtpUser, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SmtpUser, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>SMTP PASSWORD</label>
+                            @Html.TextBoxFor(model => model.SmtpPassword, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SmtpPassword, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>SMTP PORT</label>
+                            @Html.TextBoxFor(model => model.SmtpPort, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SmtpPort, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>SMTP Security</label>
+                            @Html.DropDownListFor(v => v.SmtpSecurity, new List<SelectListItem>() {
+                                new SelectListItem { Text = "None", Value = "0" },
+                                new SelectListItem { Text = "SSL", Value = "1" },
+                                new SelectListItem { Text = "TLS", Value = "2" }
+                       }, new { @class = "select" })
+                            @Html.ValidationMessageFor(model => model.SmtpSecurity, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>SMTP Authentication Domain</label>
+                            @Html.TextBoxFor(model => model.SmtpAuthenticationDomain, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SmtpAuthenticationDomain, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-section">
+                    <button class="btn btn-primary submit-btn">Save &amp; Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
